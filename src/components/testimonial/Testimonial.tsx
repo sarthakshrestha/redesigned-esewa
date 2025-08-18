@@ -10,7 +10,7 @@ interface TestimonialProps {
   rotationInterval?: number;
 }
 
-const Testimonial: React.FC<TestimonialProps> = ({
+export function Testimonial({
   testimonials = [
     {
       text: "eSewa has completely transformed how I manage my finances. The convenience of paying bills, transferring money, and shopping online all from one app is unmatched. I can't imagine going back to traditional banking.",
@@ -27,7 +27,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   ],
   className = "",
   rotationInterval = 5000,
-}) => {
+}: TestimonialProps) {
   return (
     <div className={`w-full py-16 md:py-24 ${className}`}>
       <div className="max-w-6xl mx-auto px-6">
@@ -72,6 +72,4 @@ const Testimonial: React.FC<TestimonialProps> = ({
       </div>
     </div>
   );
-};
-
-export { Testimonial };
+}
