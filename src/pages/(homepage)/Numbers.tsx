@@ -31,9 +31,9 @@ const BentoCard: React.FC<BentoCardProps> = ({
         staggerChildren: 0.1,
         delayChildren: 0.1 * index,
         duration: 0.6,
-        type: "spring",
-        stiffness: 100,
-        damping: 20,
+        // type: "spring",
+        // stiffness: 100,
+        // damping: 20,
       },
     },
   };
@@ -45,8 +45,8 @@ const BentoCard: React.FC<BentoCardProps> = ({
       y: 0,
       transition: {
         duration: 0.5,
-        type: "spring",
-        stiffness: 100,
+        // type: "spring",
+        // stiffness: 100,
       },
     },
   };
