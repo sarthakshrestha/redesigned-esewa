@@ -97,7 +97,7 @@ const BentoCard: React.FC<BentoCardProps> = ({
   );
 };
 
-const ESewaStats: React.FC = () => {
+export default function ESewaStats() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, { once: false, amount: 0.1 });
 
@@ -201,6 +201,4 @@ const ESewaStats: React.FC = () => {
       />
     </div>
   );
-};
-
-export { ESewaStats };
+}

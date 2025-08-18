@@ -1,10 +1,10 @@
 "use client";
-import { Hero } from "@/components/blocks/hero";
+import Hero from "@/components/blocks/hero";
 import HomeImage from "../../public/images/Home.png";
-import { ESewaStats } from "@/components/homepage/Numbers";
 import { Testimonial } from "@/components/testimonial/Testimonial";
+import ESewaStats from "@/pages/(homepage)/Numbers";
 
-export function LandingPage() {
+export default function LandingPage() {
   return (
     <main className="min-h-screen flex flex-col">
       <Hero

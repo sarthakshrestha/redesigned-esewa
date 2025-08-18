@@ -20,6 +20,7 @@ interface HeroProps
     height: number;
   };
 }
+
 const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
   (
     {
@@ -107,4 +108,4 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
 );
 Hero.displayName = "Hero";
 
-export { Hero };
+export default Hero;
